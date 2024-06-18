@@ -5,14 +5,29 @@ body {
     font-family: "Teachers", sans-serif;
     font-size: 15px;
     background-color: rgba(241, 236, 247, 0.384);
-    overflow-x: hidden;
-    /* Evita rolagem horizontal */
+
+
 }
 
 header {
     color: #333;
     padding: 20px 0;
     margin-top: -20px;
+
+}
+
+.image-wrapper {
+    text-align: right;
+    margin-bottom: 100px;
+    z-index: 2;
+}
+
+.image-laranja {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    margin-top: -110px;
+    right: 200px;
 }
 
 .banner {
@@ -29,6 +44,7 @@ header {
     object-fit: fill;
     /* Ajusta a imagem para preencher a div */
 }
+
 
 .banner2 {
     width: 100%;
@@ -48,14 +64,15 @@ header {
     /* Ajusta a imagem para preencher a div */
 }
 
+
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 5px;
     display: flex;
     justify-content: center;
     /* Centraliza o menu */
     align-items: center;
+
 }
 
 nav ul li {
@@ -63,12 +80,16 @@ nav ul li {
     margin: 0 5px;
     font-family: "Teachers", sans-serif;
     font-size: 30px;
+
+
 }
+
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+
 }
 
 .hero {
@@ -83,6 +104,7 @@ nav ul li a {
     font-family: "Teachers", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
+
 }
 
 .hero p {
@@ -113,15 +135,18 @@ nav ul li a {
 .secao-beneficios,
 .secao-precos {
     padding: 20px;
+
 }
 
 .sc-hero {
     background-color: #9c72a78a;
+
 }
 
+
 .sc-beneficios {
-    background-color: rgb(129, 156, 140);
-    padding: 1px;
+    padding: -200px;
+
 }
 
 /* Estilo para a seção de benefícios */
@@ -133,29 +158,33 @@ nav ul li a {
     max-width: 1000px;
     width: 90%;
     padding: 20px;
-    background-color: rgba(129, 156, 140, 0.562);
     border-radius: 5px;
 }
+
+
 
 .beneficio {
     flex: 1 1 calc(50% - 20px);
     background-color: transparent;
     border-radius: 5px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
+    display: flex;
+
 }
 
 .beneficio img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
+    margin: 50px 0 50px 50px;
+    max-width: 555px;
+    background-color: transparent;
+    margin-right: -150px;
 }
 
 .beneficio p {
     font-size: 28px;
     line-height: 1.5;
-    color: #fff6f6;
+    color: #524b4b;
     text-align: justify;
 }
 
@@ -168,21 +197,29 @@ nav ul li a {
     width: 90%;
     text-align: center;
     padding: 20px;
-    background-color: #9c72a78a;
     border-radius: 5px;
+
+}
+
+.sc-programa {
+    background-color: #9c72a78a;
+    margin-top: -20px;
+
 }
 
 .wave {
     background-color: transparent;
-    align-items: baseline;
+    align-items: baseline
 }
 
 .secao-programa h2 {
+
     position: absolute;
     font-size: 24px;
     color: #333;
     margin: -10px 50px 300px 20%;
     /* Reduz o espaçamento entre os itens */
+
 }
 
 .secao-programa ul {
@@ -219,6 +256,7 @@ nav ul li a {
 }
 
 /* Estilo para a seção de promoções */
+
 .bonus-exclusivos {
     display: flex;
     justify-content: center;
@@ -235,6 +273,7 @@ nav ul li a {
     text-align: justify;
 }
 
+
 .bonus-exclusivos h3 {
     align-self: center;
     /* Centraliza o h2 na coluna */
@@ -247,8 +286,15 @@ nav ul li a {
     padding: 0;
 }
 
+
+
+
+
+
+
 .linha-promocao {
     display: grid;
+    ;
     justify-content: space-around;
     margin-bottom: 20px;
 }
@@ -281,6 +327,7 @@ nav ul li a {
     padding: 20px;
     text-align: center;
     font-size: 34px;
+
 }
 
 .secao-precos h3 {
@@ -317,22 +364,29 @@ nav ul li a {
     border-radius: 5px;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .secao-bonus li {
     flex-direction: column-reverse;
     list-style-type: none;
     text-overflow: ellipsis;
+
 }
 
 .secao-bonus li img {
+
     justify-content: space-around;
     margin-top: 1px;
+
 }
+
 
 .listabonus {
     text-align: center;
 }
+
+
 
 /* Estilo para a seção de depoimentos */
 .secao-depoimentos {
@@ -344,7 +398,9 @@ nav ul li a {
     padding: 20px;
     background-color: rgba(129, 156, 140, 0.562);
     border-radius: 5px;
+
 }
+
 
 .secao-depoimentos h2 {
     position: absolute;
@@ -354,7 +410,9 @@ nav ul li a {
     /* Reduz o espaçamento entre os itens */
     margin-bottom: auto;
     margin-top: -250px;
+
 }
+
 
 .depoimento {
     display: flex;
@@ -381,6 +439,7 @@ nav ul li a {
     line-height: 1.5;
     margin-bottom: 0;
 }
+
 
 .secao-depoimentos button {
     /* Posiciona o botão no canto inferior direito com margem */
@@ -440,16 +499,22 @@ nav ul li a {
 }
 
 /* Estilos gerais para dispositivos móveis */
+/* Estilos gerais para dispositivos móveis */
 @media screen and (max-width: 450px) {
     nav ul {
+        display: flex;
         flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 0;
+        margin: 0;
     }
 
     nav ul li {
-        margin: 50px 0;
-        font-size: 20px;
+        flex: 0 0 auto;
+        /* Garante que os itens não encolham */
+        margin: 0 5px;
+        font-size: 16px;
     }
 
     .hero h1 {
@@ -473,7 +538,6 @@ nav ul li a {
         padding: 10px;
     }
 
-    .beneficio,
     .pacote,
     .linha-promocao,
     .promocao,
@@ -483,9 +547,34 @@ nav ul li a {
         box-shadow: none;
     }
 
+    .beneficio {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
     .beneficio img {
-        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        left: 45px;
+        max-width: 30%;
         height: auto;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .beneficio p {
+        font-size: 14px;
+        left: -10px;
+        width: 90%;
+        position: relative;
+        z-index: 1;
+        background: transparent;
+        padding: 20px;
+        text-align: justify;
     }
 
     .secao-precos h3 {
@@ -503,4 +592,17 @@ nav ul li a {
     .secao-depoimentos h2 {
         font-size: 40px;
     }
+
+    .beneficio img {
+        margin: 50px 0 50px 50px;
+        max-width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-right: -150px;
+    }
+}
+
+/* Estilos gerais para evitar overflow horizontal */
+body {
+    overflow-x: hidden;
 }
