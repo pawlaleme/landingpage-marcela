@@ -532,8 +532,19 @@ nav ul li a {
 
 /* Estilos gerais para dispositivos móveis */
 @media screen and (max-width: 490px) {
+
+    html,
     body {
-        padding: 0 5px;
+        margin: 0;
+        padding: 0;
+        font-family: "Teachers", sans-serif;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        /* Evita arraste horizontal */
+        touch-action: manipulation;
+        /* Evita o zoom */
+        width: 100%;
+        /* Garante que a largura seja 100% */
     }
 
     nav ul {
@@ -543,6 +554,7 @@ nav ul li a {
         overflow-x: auto;
         padding: 0;
         margin: 0;
+        width: 100%;
     }
 
     nav ul li {
@@ -574,6 +586,8 @@ nav ul li a {
         padding: 10px;
         margin: 0;
         width: 100%;
+        box-sizing: border-box;
+        /* Garante que padding não cause overflow */
     }
 
     .secao-depoimentos {
