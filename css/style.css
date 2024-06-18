@@ -532,6 +532,10 @@ nav ul li a {
 
 /* Estilos gerais para dispositivos móveis */
 @media screen and (max-width: 490px) {
+    body {
+        padding: 0 5px;
+    }
+
     nav ul {
         display: flex;
         flex-direction: row;
@@ -549,10 +553,12 @@ nav ul li a {
 
     .hero h1 {
         font-size: 24px;
+        margin: 0 10px;
     }
 
     .hero p {
         font-size: 14px;
+        margin: 0 10px;
     }
 
     .btn-inscricao {
@@ -567,10 +573,11 @@ nav ul li a {
     .secao-depoimentos {
         padding: 10px;
         margin: 0;
+        width: 100%;
     }
 
     .secao-depoimentos {
-        width: 95%;
+        width: 100%;
         margin-top: 15px;
     }
 
@@ -578,6 +585,7 @@ nav ul li a {
         text-align: justify;
         display: flex;
         flex-direction: column;
+        padding: 10px;
     }
 
     .secao-programa h2 {
@@ -585,8 +593,6 @@ nav ul li a {
         padding: 10px;
         font-size: 23px;
         margin-top: 10px;
-        margin-top: -10px;
-
     }
 
     .secao-programa ul li {
@@ -651,7 +657,7 @@ nav ul li a {
     }
 
     .secao-depoimentos h2 {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .beneficio img {
@@ -666,7 +672,7 @@ nav ul li a {
         background-color: #d681ab;
         border-radius: 5px;
         border: #000000;
-        width: 40%;
+        width: 80%;
         height: 50px;
         align-items: center;
         justify-content: center;
@@ -683,52 +689,4 @@ nav ul li a {
         display: flex;
         justify-content: space-around;
     }
-}
-
-/* Estilos gerais para tablets e iPads */
-@media screen and (min-width: 491px) and (max-width: 768px) {
-    nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav ul li {
-        flex: 0 0 auto;
-        margin: 0 10px;
-        font-size: 20px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .btn-inscricao {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    .secao-beneficios,
-    .secao-precos,
-    .secao-programa,
-    .container-promocoes,
-    .secao-depoimentos {
-        padding: 20px;
-        margin: 0;
-    }
-
-    .secao-depoimentos {
-        width: 94%;
-        margin-top: 10px;
-    }
-
-
-
-
 }
