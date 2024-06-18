@@ -531,6 +531,7 @@ nav ul li a {
 }
 
 /* Estilos gerais para dispositivos móveis */
+/* Estilos gerais para dispositivos móveis */
 @media screen and (max-width: 490px) {
 
     html,
@@ -603,15 +604,20 @@ nav ul li a {
     }
 
     .secao-programa h2 {
-        padding-top: 5px;
-        padding: 10px;
+        padding-top: 1px;
+        padding-bottom: 19px;
+
+        padding: -2px;
+        right: 20;
         font-size: 23px;
         margin-top: 10px;
     }
 
     .secao-programa ul li {
         font-size: 21px;
-        margin-bottom: 12px;
+        padding-top: 10px;
+
+        margin-bottom: 10px;
         vertical-align: middle;
         margin-top: 25px;
         text-align: center;
@@ -635,21 +641,27 @@ nav ul li a {
 
     .beneficio img {
         position: absolute;
-        top: 0;
-        right: 10px;
-        left: 45px;
-        max-width: 30%;
+        top: 10;
+        left: 0;
+        right: 50;
+        bottom: 0;
+        margin: auto;
+        max-width: 100%;
         height: auto;
-        opacity: 0.5;
-        z-index: -1;
+        opacity: 0.25;
+        background-color: rgba(255, 255, 255, 0.062);
+
+        /* Garanta que a opacidade esteja visível */
+        z-index: 1;
+        /* Certifique-se de que o z-index não está ocultando a imagem */
     }
 
     .beneficio p {
         font-size: 18px;
-        left: -10px;
-        width: 90%;
+        width: 100%;
         position: relative;
-        z-index: 1;
+        z-index: 2;
+        /* Garanta que o texto esteja acima da imagem */
         padding: 20px;
         text-align: justify;
         color: black;
@@ -672,14 +684,6 @@ nav ul li a {
 
     .secao-depoimentos h2 {
         font-size: 20px;
-    }
-
-    .beneficio img {
-        margin: 50px 0 50px 50px;
-        max-width: 100%;
-        height: auto;
-        background-color: transparent;
-        margin-right: -150px;
     }
 
     .button-compra {
