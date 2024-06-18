@@ -1,0 +1,549 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Teachers", sans-serif;
+    font-size: 15px;
+    background-color: rgba(241, 236, 247, 0.384);
+
+
+}
+
+header {
+    color: #333;
+    padding: 20px 0;
+    margin-top: -20px;
+
+}
+
+
+
+.banner {
+    width: 100%;
+    height: 3100%;
+    overflow: visible;
+}
+
+.banner img {
+    width: 100%;
+    /* A imagem ocupará toda a largura da div */
+    height: 100%;
+    /* A imagem manterá sua proporção original */
+    object-fit: fill;
+    /* Ajusta a imagem para preencher a div */
+}
+
+
+.banner2 {
+    width: 100%;
+    /* Largura da div */
+    height: 3100%;
+    /* Altura da div (ajuste conforme necessário) */
+    overflow: visible;
+    /* Para recortar a imagem se necessário */
+}
+
+.banner2 img {
+    width: 100%;
+    /* A imagem ocupará toda a largura da div */
+    height: 100%;
+    /* A imagem manterá sua proporção original */
+    object-fit: fill;
+    /* Ajusta a imagem para preencher a div */
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    /* Centraliza o menu */
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+    font-family: "Teachers", sans-serif;
+    font-size: 30px;
+
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+}
+
+.hero {
+    background-color: #9c72a78a;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+
+}
+
+.hero p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn-inscricao {
+    background-color: #4a8377;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-inscricao:hover {
+    background-color: #ad86ce;
+    color: #333;
+}
+
+.secao-beneficios,
+.secao-precos {
+    padding: 20px;
+
+}
+
+.sc-hero {
+    background-color: #9c72a78a;
+
+}
+
+
+.sc-beneficios {
+    background-color: rgb(129, 156, 140);
+    padding: 1px;
+
+}
+
+/* Estilo para a seção de benefícios */
+.secao-beneficios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(129, 156, 140, 0.562);
+    border-radius: 5px;
+}
+
+
+
+.beneficio {
+    flex: 1 1 calc(50% - 20px);
+    background-color: transparent;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.beneficio img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.beneficio p {
+    font-size: 28px;
+    line-height: 1.5;
+    color: #fff6f6;
+    text-align: justify;
+}
+
+/* Estilo para a seção de programa */
+.secao-programa {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    background-color: #9c72a78a;
+    border-radius: 5px;
+
+}
+
+.wave {
+    background-color: transparent;
+    align-items: baseline
+}
+
+.secao-programa h2 {
+
+    position: absolute;
+    font-size: 24px;
+    color: #333;
+    margin: -10px 50px 300px 20%;
+    /* Reduz o espaçamento entre os itens */
+
+}
+
+.secao-programa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0px;
+}
+
+.secao-programa ul li {
+    font-size: 17px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    margin-top: 25px;
+    /* Adicione esta linha para criar espaço entre a imagem e o texto */
+    text-align: justify;
+}
+
+.secbeneficios {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 90%;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.secao-programa img {
+    vertical-align: middle;
+    gap: -70;
+}
+
+/* Estilo para a seção de promoções */
+
+.bonus-exclusivos {
+    display: flex;
+    justify-content: center;
+    background-color: #9c72a78a;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.mentoria li {
+    width: 180px;
+    text-align: justify;
+}
+
+
+.bonus-exclusivos h3 {
+    align-self: center;
+    /* Centraliza o h2 na coluna */
+    align-items: center;
+}
+
+.bonus-exclusivos ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+
+
+
+
+.linha-promocao {
+    display: grid;
+    ;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a seção de preços */
+.secao-precos {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+    font-size: 40px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.secao-precos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: #333;
+}
+
+.pacote {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 34px;
+
+}
+
+.secao-precos h3 {
+    color: #699c55;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.secao-precos p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9b14c4;
+}
+
+.secao-precos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.secao-precos ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.secao-bonus {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+    background-color: #9c72a78a;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.secao-bonus li {
+    flex-direction: column-reverse;
+    list-style-type: none;
+    text-overflow: ellipsis;
+
+}
+
+.secao-bonus li img {
+
+    justify-content: space-around;
+    margin-top: 1px;
+
+}
+
+
+.listabonus {
+    text-align: center;
+}
+
+
+
+/* Estilo para a seção de depoimentos */
+.secao-depoimentos {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(129, 156, 140, 0.562);
+    border-radius: 5px;
+
+}
+
+
+.secao-depoimentos h2 {
+    position: absolute;
+    font-size: 24px;
+    color: #f3eeee;
+    margin: 1px 0px 300px 10px;
+    /* Reduz o espaçamento entre os itens */
+    margin-bottom: auto;
+    margin-top: -250px;
+
+}
+
+
+.depoimento {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Adiciona quebra de linha para os depoimentos */
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: 0px 30px 0px 30px;
+    margin: 27px 5px;
+    /* Reduz o espaçamento entre os itens */
+    background-color: transparent;
+}
+
+.depoimento img {
+    width: 250px;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+.depoimento p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+
+.secao-depoimentos button {
+    /* Posiciona o botão no canto inferior direito com margem */
+    padding: 150px 15px;
+    background-image: url('/images/seta.png');
+    background-color: transparent;
+    color: #080707;
+    border: none;
+    cursor: pointer;
+    background-size: contain;
+    /* Cobrir todo o elemento */
+    background-position: center;
+    /* Centralizar a imagem */
+    /* Outros estilos */
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.secao-depoimentos button i {
+    margin-left: 5px;
+}
+
+.depoimento cite {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.depoimento-ativo {
+    display: block;
+}
+
+.depoimentos-inativos {
+    display: none;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navegacao button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.navegacao button {
+    background-color: #bbb;
+}
+
+.navegacao button.desativado {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* Estilos gerais para dispositivos móveis */
+@media screen and (max-width: 450px) {
+    nav ul {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+    }
+
+    nav ul li {
+        margin: 50px 0;
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .btn-inscricao {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .secao-beneficios,
+    .secao-precos,
+    .secao-programa,
+    .container-promocoes,
+    .secao-depoimentos {
+        padding: 10px;
+    }
+
+    .beneficio,
+    .pacote,
+    .linha-promocao,
+    .promocao,
+    .depoimento {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+        box-shadow: none;
+    }
+
+    .beneficio img {
+        width: 50px;
+        height: auto;
+    }
+
+    .secao-precos h3 {
+        font-size: 18px;
+    }
+
+    .secao-precos p {
+        font-size: 20px;
+    }
+
+    .secao-precos ul li {
+        font-size: 14px;
+    }
+
+    .secao-depoimentos h2 {
+        font-size: 40px;
+    }
+}

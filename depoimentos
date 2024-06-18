@@ -1,0 +1,53 @@
+     <section class="secao-depoimentos">
+        <div class="texto">
+          <h1>Beneficios</h1>
+        </div>
+        <div class="cartao-depoimento destacado">
+          <img src="/images/user.png" alt="Foto do Perfil">
+          <div class="informacao-depoimento">
+              <p class="nome">Paula</p>
+              <div class="avaliacao">
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+              </div>
+              <p class="localizacao">Capela do Alto - SP</p>
+            
+              <p class="review">"Eu amei, recomendo para todas minhas amigas."</p>
+          </div>
+      </div>
+      <div class="cartao-depoimento destacado">
+        <img src="/images/user.png" alt="Foto do Perfil">
+        <div class="informacao-depoimento">
+            <p class="nome">Claudia</p>
+            <div class="avaliacao">
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+              <span class="estrela">&#9733;</span>
+
+          </div>
+            <p class="localizacao">Localização</p>
+          
+            <p class="review">"Texto do depoimento."</p>
+        </div>
+    </div> 
+    <div class="cartao-depoimento destacado">
+      <img src="/images/user.png" alt="Foto do Perfil">
+      <div class="informacao-depoimento">
+          <p class="nome">Joana</p>
+          <div class="avaliacao">
+            <span class="estrela">&#9733;</span>
+            <span class="estrela">&#9733;</span>
+            <span class="estrela">&#9733;</span>
+            <span class="estrela">&#9733;</span>
+            <span class="estrela">&#9734;</span>
+        </div>
+          <p class="localizacao">Localização</p>
+        
+          <p class="review">"Texto do depoimento."</p>
+      </div>
+  </div>

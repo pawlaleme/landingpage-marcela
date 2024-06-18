@@ -1,2 +1,2 @@
 # landingpage-marcela
-landing page de vendas
+Lading page de vendas
