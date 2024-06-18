@@ -56,7 +56,6 @@ header {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 5px;
     display: flex;
     justify-content: center;
     /* Centraliza o menu */
@@ -134,8 +133,7 @@ nav ul li a {
 
 
 .sc-beneficios {
-    background-color: rgb(129, 156, 140);
-    padding: 1px;
+    padding: -200px;
 
 }
 
@@ -148,7 +146,6 @@ nav ul li a {
     max-width: 1000px;
     width: 90%;
     padding: 20px;
-    background-color: rgba(129, 156, 140, 0.562);
     border-radius: 5px;
 }
 
@@ -159,20 +156,23 @@ nav ul li a {
     background-color: transparent;
     border-radius: 5px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
+    display: flex;
+
 }
 
 .beneficio img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
+    margin: 50px 0 50px 50px;
+    max-width: 555px;
+    background-color: transparent;
+    margin-right: -150px;
 }
 
 .beneficio p {
     font-size: 28px;
     line-height: 1.5;
-    color: #fff6f6;
+    color: #524b4b;
     text-align: justify;
 }
 
@@ -185,8 +185,13 @@ nav ul li a {
     width: 90%;
     text-align: center;
     padding: 20px;
-    background-color: #9c72a78a;
     border-radius: 5px;
+
+}
+
+.sc-programa {
+    background-color: #9c72a78a;
+    margin-top: -20px;
 
 }
 
@@ -516,7 +521,6 @@ nav ul li a {
         padding: 10px;
     }
 
-    .beneficio,
     .pacote,
     .linha-promocao,
     .promocao,
@@ -526,9 +530,41 @@ nav ul li a {
         box-shadow: none;
     }
 
+    .beneficio {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
     .beneficio img {
-        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        left: 45px;
+        max-width: 30%;
+        /* Ajuste a largura conforme necessário */
         height: auto;
+        opacity: 0.5;
+        /* Ajuste a opacidade conforme necessário para efeito de fundo */
+        z-index: -1;
+        /* Coloca a imagem atrás do texto */
+    }
+
+    .beneficio p {
+        font-size: 14px;
+        left: -10px;
+        width: 90%;
+        /* Ajuste a largura conforme necessário */
+        position: relative;
+        z-index: 1;
+        /* Coloca o texto acima da imagem */
+        background: transparent;
+        /* Ajuste a cor de fundo conforme necessário */
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: justify;
     }
 
     .secao-precos h3 {
@@ -545,5 +581,15 @@ nav ul li a {
 
     .secao-depoimentos h2 {
         font-size: 40px;
+    }
+
+    .beneficio img {
+        margin: 50px 0 50px 50px;
+        max-width: 100%;
+        /* Define a largura máxima como 100% */
+        height: auto;
+        /* Permite que a altura se ajuste proporcionalmente */
+        background-color: transparent;
+        margin-right: -150px;
     }
 }
