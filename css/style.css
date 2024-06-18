@@ -775,6 +775,147 @@ nav ul li a {
     }
 }
 
+
+/* Estilos gerais para tablets e iPads */
+@media screen and (min-width: 451px) and (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        flex: 0 0 auto;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn-inscricao {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .secao-beneficios, .secao-precos,
+    .secao-programa,
+    .container-promocoes,
+    .secao-depoimentos {
+        padding: 20px;
+        margin: 0;
+    }
+ 
+    .secao-depoimentos {
+        width: 94%;
+    }
+
+    .secao-garantia {
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-programa h2 {
+        padding-top: 10px;
+        padding: 1px;
+    }
+
+    .linha-promocao,
+    .promocao,
+    .depoimento {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+
+    .beneficio {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .beneficio img {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        left: 45px;
+        max-width: 40%;
+        height: auto;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .beneficio p {
+        font-size: 20px;
+        left: -10px;
+        width: 90%;
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        text-align: justify;
+        color: black;
+    }
+
+    .secao-precos h3 {
+        font-size: 24px;
+    }
+
+    .secao-precos p {
+        font-size: 24px;
+    }
+
+    .secao-precos ul li {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.705);
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .secao-depoimentos h2 {
+        font-size: 40px;
+    }
+
+    .beneficio img {
+        margin: 50px 0 50px 50px;
+        max-width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-right: -150px;
+    }
+
+    .button-compra {
+        background-color: #d681ab;
+        border-radius: 5px;
+        border: #000000;
+        width: 60%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Teachers", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
 /* Estilos gerais para evitar overflow horizontal */
 body {
     overflow-x: hidden;
