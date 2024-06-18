@@ -15,19 +15,7 @@ header {
     margin-top: -20px;
 }
 
-.image-wrapper {
-    text-align: right;
-    margin-bottom: 100px;
-    z-index: 2;
-}
 
-.image-laranja {
-    position: absolute;
-    width: 350px;
-    height: auto;
-    margin-top: -110px;
-    right: 200px;
-}
 
 .banner {
     width: 100%;
@@ -534,17 +522,4 @@ nav ul li a {
         margin-right: -150px;
     }
 
-    .image-laranja {
-        width: 250px;
-        right: 100px;
-        margin-top: -80px;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .image-laranja {
-        width: 150px;
-        right: 50px;
-        margin-top: -50px;
-    }
 }
