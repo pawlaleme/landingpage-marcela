@@ -359,362 +359,376 @@ nav ul li a {
 }
 
 .secao-precos h2 {
-        box-shadow: rgb(173, 117, 187) 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(96, 91, 158) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(130, 121, 209) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px;
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 34px;
-        color: #855a99;
-    }
-    
-    .pacote {
-        background-color: #ffffff;
-        margin-bottom: 20px;
-        padding: 20px;
-        text-align: center;
-        font-size: 34px;
-        border: 5px dashed #9F69BF;
-    }
-    
-    .secao-precos h3 {
-        color: #be95c4;
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-    
-    .secao-precos p {
-        font-size: 24px;
-        font-weight: bold;
-        color: #9b14c4;
-    }
-    
-    .secao-precos ul {
-        list-style: none;
+    box-shadow: rgb(173, 117, 187) 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(96, 91, 158) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(130, 121, 209) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: #855a99;
+}
+
+.pacote {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 34px;
+    border: 5px dashed #9F69BF;
+}
+
+.secao-precos h3 {
+    color: #be95c4;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.secao-precos p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9b14c4;
+}
+
+.secao-precos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.secao-precos ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.secao-bonus {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+    background-color: #dad7cd;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.secao-bonus li {
+    flex-direction: column-reverse;
+    list-style-type: none;
+    text-overflow: ellipsis;
+}
+
+.secao-bonus li img {
+    justify-content: space-around;
+    margin-top: 1px;
+}
+
+.listabonus {
+    text-align: left;
+    display: flex;
+}
+
+/* Estilo para a seção de depoimentos */
+.secao-depoimentos {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 54%;
+    padding: 4px;
+    padding-top: -10px;
+    background-color: rgba(159, 196, 173, 0.562);
+    border-radius: 5px;
+    box-shadow: 10px #6ABD45;
+    margin-bottom: 10px;
+    margin-top: -85px;
+}
+
+.secao-depoimentos h2 {
+    position: absolute;
+    font-size: 24px;
+    color: #000000;
+    margin: 1px 0px 300px 10px;
+    margin-bottom: auto;
+    margin-top: -220px;
+}
+
+.depoimento {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: 0px 30px 0px 30px;
+    margin: 27px 5px;
+    background-color: transparent;
+}
+
+.depoimento img {
+    width: 250px;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+.depoimento p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.secao-depoimentos button {
+    padding: 150px 15px;
+    background-image: url('/images/seta.png');
+    background-color: transparent;
+    color: #080707;
+    border: none;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.secao-depoimentos button i {
+    margin-left: 5px;
+}
+
+.depoimento cite {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.depoimento-ativo {
+    display: block;
+}
+
+.depoimentos-inativos {
+    display: none;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navegacao button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.navegacao button {
+    background-color: #bbb;
+}
+
+.navegacao button.desativado {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* Estilos gerais para dispositivos móveis */
+@media screen and (max-width: 490px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         padding: 0;
         margin: 0;
     }
-    
-    .secao-precos ul li {
+
+    nav ul li {
+        flex: 0 0 auto;
+        margin: 0 5px;
         font-size: 16px;
-        margin-bottom: 5px;
-        color: rgb(0, 0, 0);
     }
-    
-    .secao-bonus {
-        display: flex;
-        align-items: center;
-        margin: 20px auto;
-        max-width: 1000px;
-        width: 90%;
-        padding: 20px;
-        background-color: #dad7cd;
-        border-radius: 5px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        flex-direction: row-reverse;
-    }
-    
-    .secao-bonus li {
-        flex-direction: column-reverse;
-        list-style-type: none;
-        text-overflow: ellipsis;
-    }
-    
-    .secao-bonus li img {
-        justify-content: space-around;
-        margin-top: 1px;
-    }
-    
-    .listabonus {
-        text-align: left;
-        display: flex;
-    }
-    
-    /* Estilo para a seção de depoimentos */
-    .secao-depoimentos {
-        display: flex;
-        align-items: center;
-        margin: 20px auto;
-        width: 54%;
-        padding: 4px;
-        padding-top: -10px;
-        background-color: rgba(159, 196, 173, 0.562);
-        border-radius: 5px;
-        box-shadow: 10px #6ABD45;
-        margin-bottom: 10px;
-        margin-top: -85px;
-    }
-    
-    .secao-depoimentos h2 {
-        position: absolute;
+
+    .hero h1 {
         font-size: 24px;
-        color: #000000;
-        margin: 1px 0px 300px 10px;
-        margin-bottom: auto;
-        margin-top: -220px;
     }
-    
-    .depoimento {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 6px;
-        border: 1px solid transparent;
-        border-radius: 0px 30px 0px 30px;
-        margin: 27px 5px;
-        background-color: transparent;
-    }
-    
-    .depoimento img {
-        width: 250px;
-        height: auto;
-        border-radius: 10%;
-        margin-right: 20px;
-    }
-    
-    .depoimento p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 0;
-    }
-    
-    .secao-depoimentos button {
-        padding: 150px 15px;
-        background-image: url('/images/seta.png');
-        background-color: transparent;
-        color: #080707;
-        border: none;
-        cursor: pointer;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        justify-content: center;
-    }
-    
-    .secao-depoimentos button i {
-        margin-left: 5px;
-    }
-    
-    .depoimento cite {
-        font-style: italic;
+
+    .hero p {
         font-size: 14px;
-        margin-top: 10px;
     }
-    
-    .depoimento-ativo {
-        display: block;
+
+    .btn-inscricao {
+        padding: 8px 16px;
+        font-size: 14px;
     }
-    
-    .depoimentos-inativos {
-        display: none;
+
+    .secao-beneficios,
+    .secao-precos,
+    .secao-programa,
+    .container-promocoes,
+    .secao-depoimentos {
+        padding: 10px;
+        margin: 0;
     }
-    
-    .navegacao {
+
+    .secao-depoimentos {
+        width: 95%;
+        margin-top: 15px;
+    }
+
+    .secao-garantia {
+        text-align: justify;
         display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
+        flex-direction: column;
     }
-    
-    .navegacao button {
-        padding: 10px 20px;
-        background-color: #ccc;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .navegacao button {
-        background-color: #bbb;
-    }
-    
-    .navegacao button.desativado {
-        opacity: 0.5;
-        cursor: default;
-    }
-    
-    /* Estilos gerais para dispositivos móveis */
-    @media screen and (max-width: 490px) {
-        nav ul {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            padding: 0;
-            margin: 0;
-        }
-    
-        nav ul li {
-            flex: 0 0 auto;
-            margin: 0 5px;
-            font-size: 16px;
-        }
-    
-        .hero h1 {
-            font-size: 24px;
-        }
-    
-        .hero p {
-            font-size: 14px;
-        }
-    
-        .btn-inscricao {
-            padding: 8px 16px;
-            font-size: 14px;
-        }
-    
-        .secao-beneficios,
-        .secao-precos,
-        .secao-programa,
-        .container-promocoes,
-        .secao-depoimentos {
-            padding: 10px;
-            margin: 0;
-        }
-    
-        .secao-depoimentos {
-            width: 102%;
-        }
-    
-        .secao-garantia {
-            text-align: justify;
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .secao-programa h2 {
-            padding-top: 5px;
-            padding: 1px;
-        }
-    
-        .linha-promocao,
-        .promocao,
-        .depoimento {
-            flex: 1 1 100%;
-            margin-bottom: 10px;
-            box-shadow: none;
-        }
-    
-        .beneficio {
-            position: relative;
-            text-align: center;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-    
-        .beneficio img {
-            position: absolute;
-            top: 0;
-            right: 10px;
-            left: 45px;
-            max-width: 30%;
-            height: auto;
-            opacity: 0.5;
-            z-index: -1;
-        }
-    
-        .beneficio p {
-            font-size: 18px;
-            left: -10px;
-            width: 90%;
-            position: relative;
-            z-index: 1;
-            padding: 20px;
-            text-align: justify;
-            color: black;
-        }
-    
-        .secao-precos h3 {
-            font-size: 20px;
-        }
-    
-        .secao-precos p {
-            font-size: 20px;
-        }
-    
-        .secao-precos ul li {
-            font-size: 18px;
-            color: rgba(0, 0, 0, 0.705);
-            text-align: center;
-            font-weight: 800;
-        }
-    
-        .secao-depoimentos h2 {
-            font-size: 40px;
-        }
-    
-        .beneficio img {
-            margin: 50px 0 50px 50px;
-            max-width: 100%;
-            height: auto;
-            background-color: transparent;
-            margin-right: -150px;
-        }
-    
-        .button-compra {
-            background-color: #d681ab;
-            border-radius: 5px;
-            border: #000000;
-            width: 40%;
-            height: 50px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            color: white;
-            text-transform: uppercase;
-            font-family: "Teachers", sans-serif;
-            font-weight: 800;
-            font-size: 20px;
-            margin-bottom: 17px;
-        }
-    
-        .botao {
-            display: flex;
-            justify-content: space-around;
-        }
-    }
-    
-    /* Estilos gerais para tablets e iPads */
-    @media screen and (min-width: 491px) and (max-width: 768px) {
-        nav ul {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-        }
-    
-        nav ul li {
-            flex: 0 0 auto;
-            margin: 0 10px;
-            font-size: 20px;
-        }
-    
-        .hero h1 {
-            font-size: 32px;
-        }
-    
-        .hero p {
-            font-size: 18px;
-        }
-    
-        .btn-inscricao {
-            padding: 10px 20px;
-            font-size: 16px;
-        }
-    
-        .secao-beneficios,
-        .secao-precos,
-        .secao-programa,
-        .container-promocoes,
-        .secao-depoimentos {
-            padding: 20px;
-            margin: 0;
-        }
-    
-        .secao-depoimentos {
-            width: 94%;
-        }
-    
-        
-    
+
+    .secao-programa h2 {
+        padding-top: 5px;
+        padding: 10px;
+        font-size: 23px;
+        margin-top: 10px;
+        margin-top: -10px;
 
     }
+
+    .secao-programa ul li {
+        font-size: 21px;
+        margin-bottom: 12px;
+        vertical-align: middle;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .linha-promocao,
+    .promocao,
+    .depoimento {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+        box-shadow: none;
+    }
+
+    .beneficio {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .beneficio img {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        left: 45px;
+        max-width: 30%;
+        height: auto;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .beneficio p {
+        font-size: 18px;
+        left: -10px;
+        width: 90%;
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        text-align: justify;
+        color: black;
+    }
+
+    .secao-precos h3 {
+        font-size: 20px;
+    }
+
+    .secao-precos p {
+        font-size: 20px;
+    }
+
+    .secao-precos ul li {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.705);
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .secao-depoimentos h2 {
+        font-size: 40px;
+    }
+
+    .beneficio img {
+        margin: 50px 0 50px 50px;
+        max-width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-right: -150px;
+    }
+
+    .button-compra {
+        background-color: #d681ab;
+        border-radius: 5px;
+        border: #000000;
+        width: 40%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Teachers", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Estilos gerais para tablets e iPads */
+@media screen and (min-width: 491px) and (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        flex: 0 0 auto;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn-inscricao {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .secao-beneficios,
+    .secao-precos,
+    .secao-programa,
+    .container-promocoes,
+    .secao-depoimentos {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .secao-depoimentos {
+        width: 94%;
+        margin-top: 10px;
+    }
+
+
+
+
+}
