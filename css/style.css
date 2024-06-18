@@ -596,25 +596,3 @@ nav ul li a {
         margin-right: -150px;
     }
 }
-
-@media screen and (max-width: 768px) {
-    .image-laranja {
-        width: 250px;
-        /* Reduz a largura da imagem */
-        right: -75px;
-        /* Ajusta a posição direita */
-        margin-top: -60px;
-        /* Ajusta a margem superior */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .image-laranja {
-        width: 150px;
-        /* Reduz ainda mais a largura da imagem */
-        right: 50px;
-        /* Ajusta a posição direita */
-        margin-top: -30px;
-        /* Ajusta a margem superior */
-    }
-}
