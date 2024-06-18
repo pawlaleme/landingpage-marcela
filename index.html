@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Teachers:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="/js/depoimentos.js"></script>
 </head>
@@ -23,9 +26,9 @@
     </div>
     <nav class="menu">
       <ul>
-        <li><a href="#"> Depoimentos • </a></li>
-        <li><a href="#"> Benefícios • </a></li>
-        <li><a href="#"> Bônus-exclusivos</a></li>
+        <li><a href="#feedback"> Depoimentos • </a></li>
+        <li><a href="#secao-beneficios"> Benefícios • </a></li>
+        <li><a href="#bonusexc"> Bônus-exclusivos</a></li>
       </ul>
     </nav>
   </header>
@@ -39,7 +42,7 @@
   </div>
   <div class="sc-beneficios">
 
-    <section class="secao-beneficios">
+    <section class="secao-beneficios" id="secao-beneficios">
       <div class="beneficio">
 
         <p>Você está cansada de acordar todas as manhãs sentindo-se como se tivesse sido atropelada por um caminhão? As
@@ -51,8 +54,13 @@
 
       </div>
     </section>
+    <div class="botao">
+      <button a href="#" class="button-compra">Comprar Agora! </button>
 
+    </div>
+    </section>
   </div>
+
   </div>
   <div class="sc-programa">
     <section class="secao-programa">
@@ -73,7 +81,7 @@
       </div>
   </div>
   </section>
-  <section class="secao-depoimentos">
+  <section class="secao-depoimentos" id="feedback">
     <h2>Feedbacks</h2>
 
     <div class="depoimento" data-depoimento="1">
@@ -97,42 +105,55 @@
 
   </section>
 
-  <section class="secao-bonus">
-
-    <img src="/images/videos.png" alt="Promoção 4">
-    <img src="/images/mentoria.png" alt="Promoção 1">
-    <img src="/images/ferramentas.png" alt="Promoção 3">
-    <img src="/images/planilhas.png" alt="Promoção 2">
+  <section class="secao-bonus" id="bonusexc">
+    </div>
+    
+    <img src="/images/videos.png" alt="icone de video">
+    <img src="/images/mentoria.png" alt="icone mentoria">
+    <img src="/images/ferramentas.png" alt="icone ferramenta">
+    <img src="/images/planilhas.png" alt="icone planilha">
     <div class="listabonus">
-      <li><img src="/images/verify2.png" alt="Icone de verificado"> Acesso a recursos adicionais, incluindo vídeos,
+      <li><img class="verify" src="/images/verify2.png" alt="Icone de verificado"> Acesso a recursos adicionais,
+        incluindo vídeos,
         planilhas e ferramentas práticas para apoiar sua jornada.</li>
-      <li><img src="/images/verify2.png" alt="Icone de verificado"> Sessão de coaching individual para abordar suas
+      <li><img class="verify" src="/images/verify2.png" alt="Icone de verificado"> Sessão de coaching individual para
+        abordar suas
         preocupações específicas e garantir seu sucesso.</li>
+
+    </div>
+  <div class="titleb"><h2> &nbsp; Bônus Exclusivos!&nbsp; </h2>
+
+
+  </section>
+  <section class="secao-garantia" id="garantia">
+
+    <img src="/images/garantia.png" alt="icone de video" width="250px">
+   
+    <div class="listagarantia">
+      <li><h2>Sua <strong> saúde e felicidade</strong> são nossa prioridade número um. <br>
+        Se você não sentir uma melhoria significativa em sua saúde <br> e bem-estar após concluir meu curso,
+         oferecemos<br> reembolso total  dentro de 30 dias.</li>
+</h2> 
     </div>
 
 
   </section>
-
   <section class="secao-precos">
-    <h2>INCREVA-SE AGORA!</h2>
+    <h2>INSCREVA-SE AGORA!</h2>
     <div class="pacote">
       <h3>MÉTODO DESINFLAMA</h3>
       <p> 12 X R$ 0,00</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li> 🕗 Não Espere Mais para se Libertar da Dor!  </li>
+        <li>  Inscreva-se agora e dê o primeiro passo para uma vida sem inflamação e cheia de vitalidade! </li> 
+        <li>👇</li>
       </ul>
       <a href="#" class="btn-comprar">Comprar Agora</a>
     </div>
     <!-- Você pode adicionar mais pacotes aqui se necessário -->
   </section>
   <footer>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#5000ca" fill-opacity="0.2"
-        d="M0,96L18.5,85.3C36.9,75,74,53,111,69.3C147.7,85,185,139,222,149.3C258.5,160,295,128,332,144C369.2,160,406,224,443,256C480,288,517,288,554,240C590.8,192,628,96,665,90.7C701.5,85,738,171,775,197.3C812.3,224,849,192,886,192C923.1,192,960,224,997,218.7C1033.8,213,1071,171,1108,149.3C1144.6,128,1182,128,1218,144C1255.4,160,1292,192,1329,192C1366.2,192,1403,160,1422,144L1440,128L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
-      </path>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a3b18a" fill-opacity="0.5" d="M0,192L17.1,202.7C34.3,213,69,235,103,245.3C137.1,256,171,256,206,234.7C240,213,274,171,309,160C342.9,149,377,171,411,181.3C445.7,192,480,192,514,208C548.6,224,583,256,617,240C651.4,224,686,160,720,138.7C754.3,117,789,139,823,160C857.1,181,891,203,926,186.7C960,171,994,117,1029,96C1062.9,75,1097,85,1131,112C1165.7,139,1200,181,1234,213.3C1268.6,245,1303,267,1337,266.7C1371.4,267,1406,245,1423,234.7L1440,224L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
   </footer>
 </body>
 
